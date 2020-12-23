@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <h2>REGISTRATION FORM</h2>
+            <table class="table table-borderless">
+                <tr>
+                    <td>First Name</td>
+                    <td><input id="fname" type="text" class="form-control"></td>
+                    <td>Last Name</td>
+                    <td><input id="lname" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input id="age" type="text" class="form-control"></td>
+                    <td>D.O.B</td>
+                    <td><input id="dob" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input id="mob" type="text" class="form-control"></td>
+                    <td>Email id</td>
+                    <td><input id="email" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Place</td>
+                    <td><input id="place" type="text" class="form-control"></td>
+                    <td>Username</td>
+                    <td><input id="uname" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input id="pass" type="text" class="form-control"></td>
+                    <td>Confirm Password</td>
+                    <td><input id="cpass" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><Button onclick="mybuttonclick()" class="btn btn-success">REGISTER</Button></td>
+                </tr>
+            </table>
+
+           </div>
+       </div>
+   </div>
+   <script>
+       function mybuttonclick(){
+           var getFname=document.getElementById("fname").value
+           var getLname=document.getElementById("lname").value
+           var getAge=document.getElementById("age").value
+           var getDOB=document.getElementById("dob").value
+           var getMobile=document.getElementById("mob").value
+           var getEmail=document.getElementById("email").value
+           var getPlace=document.getElementById("place").value
+           var getUsername=document.getElementById("uname").value
+           var getPassword=document.getElementById("pass").value
+           var getConfirmPass=document.getElementById("cpass").value
+           console.log(getFname)
+           console.log(getLname)
+           console.log(getAge)
+           console.log(getDOB)
+           console.log(getMobile)
+           console.log(getEmail)
+           console.log(getPlace)
+           console.log(getUsername)
+           console.log(getPassword)
+           console.log(getConfirmPass)
+
+
+       }
+   </script>
+    
+</body>
+</html>
